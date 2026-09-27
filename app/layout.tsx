@@ -50,6 +50,13 @@ export const metadata: Metadata = {
     description: site.description,
     images: ['/og-image.png'],
   },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   robots: { index: true, follow: true },
 }
 
