@@ -29,20 +29,11 @@ export const metadata: Metadata = {
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
     siteName: site.name,
-    images: [
-      {
-        url: '/coach-portrait.png',
-        width: 1200,
-        height: 630,
-        alt: `${site.name} — ${site.tagline}`,
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
-    images: ['/coach-portrait.png'],
   },
   robots: { index: true, follow: true },
 }
