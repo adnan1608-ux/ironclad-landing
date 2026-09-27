@@ -7,7 +7,7 @@ export const site = {
   tagline: "Built for the relentless",
   description:
     "A 12-week performance system for busy professionals who want strength, energy, and confidence without sacrificing their edge.",
-  url: "https://ironclad-performance.vercel.app",
+  url: "https://ironclad-landing.vercel.app",
   coach: "Marcus Vance",
   email: "hello@ironcladperformance.com",
   price: 297,

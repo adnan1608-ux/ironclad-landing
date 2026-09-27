@@ -5,8 +5,14 @@ import { GeistMono } from 'geist/font/mono'
 import { site } from '@/lib/content'
 import './globals.css'
 
+const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : site.url
+
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(baseUrl),
   title: {
     default: `${site.name} | ${site.tagline}`,
     template: `%s | ${site.name}`,
@@ -25,7 +31,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
-    url: site.url,
+    url: baseUrl,
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
     siteName: site.name,
